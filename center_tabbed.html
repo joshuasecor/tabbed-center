@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="hero">
+
+		<img class="hero-image" src="images/hero.png"/>
+
+		<div class="hero-overlay"></div>
+
+		<div class="hero-video">
+      <video class="main-media-content video-js vjs-default-skin" poster="https://d1rfylghichgwg.cloudfront.net/generic/1080/4138366050341/thumb/thumb_00005.jpg" autoplay="autoplay" id="video-active" muted>
+				<source src="https://d1rfylghichgwg.cloudfront.net/generic/1080/4138366050341/1430506638314.mp4#t=15,30">
+      </video>
+		</div>
+
+		<div class="hero-meta">
+
+			<div class="hero-meta-title right-border">
+				<img src="images/cooking.png"/>
+				<span class="page-title">cooking</span>
+			</div>
+
+			<div class="hero-meta-count right-border">
+				<span class="meta-label">Pages:</span>
+				<span class="meta-number"><i class="icon"><img src="images/page.png"></i>5,265</span>
+			</div>
+
+			<div class="hero-meta-count right-border">
+				<span class="meta-label">Fans:</span>
+				<span class="meta-number"><i class="icon"><img src="images/fan.png"></i>432</span>
+			</div>
+
+			<div class="hero-meta-count right-border">
+				<span class="meta-label">Videos:</span>
+				<span class="meta-number"><i class="icon"><img src="images/video.png"></i>1,232</span>
+			</div>
+
+			<div class="hero-meta-count right-border">
+				<span class="meta-label">Conversations:</span>
+				<span class="meta-number"><i class="icon"><img src="images/conversation.png"></i>5,496</span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script>
+
+		$(document).ready(function(){
+			$("#video-active").on(
+		    "timeupdate",
+		    function(event){
+		      onTrackedVideoFrame(this.currentTime);
+		    });
+		});
+
+		function onTrackedVideoFrame(currentTime){
+		  var video = document.getElementById("video-active");
+	    if (currentTime >= 30) {
+      	video.currentTime = 15;
+      	video.play();
+	    }
+		};
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: #f7f7f7 !important;
+}
+
+
+/* Hero Header */
+
+.hero {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.hero-image {
+	min-width: 100%;
+	height: 100%;
+	vertical-align: middle;
+  position: absolute;
+  top: -100%; left: 0; right: 0; bottom: -100%;
+  margin: auto;
+  z-index: 0;
+}
+
+.hero-overlay {
+	width: 100%;
+	height: 100%;
+  background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.7));
+  background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.7));
+  background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.7));
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.7));
+  position: absolute;
+}
+
+.hero-video {
+	position: absolute;
+	top: 110px;
+	right: 100px;
+	width: 370px;
+	height: 180px;
+	overflow: hidden;
+	border: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.hero-video video {
+	min-height: 100%;
+	min-width: 370px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+  left: 0;
+}
+
+.hero-meta {
+	position: absolute;
+	bottom: 25px;
+	left: 30px;
+	display: block;
+}
+
+.right-border {
+	border-right: solid #808080 1px;
+	padding-right: 15px;
+}
+
+.hero-meta-title {
+	vertical-align: middle;
+	float: left;
+	margin-right: 15px;
+}
+
+.hero-meta-title img {
+	height: 72px;
+	margin-top: -20px;
+	overflow: auto;
+	float: left;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.page-title {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 52px;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+}
+
+.page-creator {
+	display: block;
+	color: #e6e6e6;
+	font-size: 12px;
+	text-align: right;
+	font-family: 'Raleway', sans-serif;
+}
+
+.profile-image {
+	height: 52px;
+	width: 52px;
+	overflow: hidden;
+	border-radius: 8px;
+	border: 2px solid #fff;
+}
+
+.profile-image img {
+	height: 100%;
+}
+
+.hero-meta-count {
+	float: left;
+	margin-left: 15px;
+}
+
+.meta-label {
+	text-align: center;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.meta-number {
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 36px;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+}
+
+.icon {
+	height: 32px;
+	float: left;
+	margin-right: 8px;
+}
+
+.icon img {
+	height: 26px;
+	margin-bottom: 5px;
+}
+
+.icon-2 img {
+	height: 12px;
+	margin-right: 2px;
+}
