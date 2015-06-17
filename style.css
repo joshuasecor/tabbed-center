@@ -188,6 +188,11 @@ body {
   padding-left: 5px !important;
 }
 
+.padding-fix-none {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
 .img-large {
 	height: 410px;
 }
@@ -208,6 +213,45 @@ body {
   	padding-right: 0px !important;
   	padding-left: 0px !important;
   }
+}
+
+.media-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	height: 30%;
+	margin: 0 10px 10px 0;
+	width: -moz-calc(100% - 12px);
+	width: -webkit-calc(100% - 12px);
+	width: -o-calc(100% - 12px);
+	width: calc(100% - 12px);
+	color: #fff;
+}
+
+.media-overlay-2 {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	height: 30%;
+	margin: 0 10px 10px 0;
+	width: -moz-calc(100% - 2px);
+	width: -webkit-calc(100% - 2px);
+	width: -o-calc(100% - 2px);
+	width: calc(100% - 2px);
+	color: #fff;
+}
+
+.media-overlay-3 {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	height: 30%;
+	margin: 0 10px 10px 0;
+	width: -moz-calc(100% - 6px);
+	width: -webkit-calc(100% - 6px);
+	width: -o-calc(100% - 6px);
+	width: calc(100% - 6px);
+	color: #fff;
 }
 
 
@@ -278,6 +322,15 @@ body {
 	.page-5, .page-4 {
 		display: none;
 	}
+	.hero-meta a {
+		display: none;
+	}
+	.hero-video {
+		display: none;
+	}
+	.hero {
+		height: 200px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -286,6 +339,10 @@ body {
 	}
 	.page-5, .page-4, .page-3, .page-2 {
 		display: none;
+	}
+	.list-page-title a {
+		font-size: 26px;
+		line-height: 30px;
 	}
 }
 
