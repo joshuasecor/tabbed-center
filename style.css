@@ -55,10 +55,11 @@ body {
   left: 0;
   z-index: 0;
   transition: 0.2s;
+  -webkit-transition: 0.2s;
 }
 
 .hero-video:hover video {
-	opacity: 0.7;
+	-webkit-filter: brightness(0.7);
 }
 
 .hero-meta {
@@ -401,9 +402,6 @@ body {
   .padding-fix-right, .padding-fix-left {
   	padding-right: 0px !important;
   	padding-left: 0px !important;
-  }
-  .media-overlay {
-  	height: 40% !important;
   }
   .media-overlay-2, .media-overlay-3 {
   	margin-bottom: 0 !important;
@@ -839,9 +837,8 @@ body {
 .story-image-overlay span {
 	text-transform: uppercase;
 	position: absolute;
-	font-weight: 700;
 	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	bottom: 0;
 	right: 0;
 	color: #fff;
@@ -917,7 +914,7 @@ body {
 	line-height: 2;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 25px 0;
+	margin: 15px 0;
 }
 
 .popular-stories-link a {
@@ -942,6 +939,9 @@ body {
 	}
 	.comment-text {
 		width: 70%;
+	}
+	.img-small-medium {
+		height: 200px;
 	}
 }
 
