@@ -665,6 +665,25 @@ body {
 	}
 }
 
+@media (max-width: 640px) {
+	.hero-meta-title img {
+		height: 30px;
+		margin-bottom: 0;
+		margin-right: 4px;
+	}
+	.hero-meta-title .page-title {
+		font-size: 24px;
+	}
+	.meta-label {
+		font-size: 12px;
+	}
+	.meta-number {
+		font-size: 12px;
+	}
+	.meta-number .icon img {
+		height: 12px;
+	}
+}
 
 
 /* Recent and Popular Media */
